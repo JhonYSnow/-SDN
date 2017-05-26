@@ -1,0 +1,16 @@
+{
+	"dpid":1,
+	"match":{
+		"dl_dst":"00:00:00:00:00:04",
+		"in_port":2
+		},
+	"actions":[]
+}
+{
+	"dpid":1,
+	"match":{
+		"dl_dst":"00:00:00:00:00:02",
+		"in_port":2
+		},
+	"actions":[]
+}

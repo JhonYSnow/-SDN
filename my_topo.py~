@@ -7,17 +7,17 @@ class Testtopo(Topo):
 
 		S1=self.addSwitch('s1')
 		S2=self.addSwitch('s2')
+		S3=self.addSwitch('s3')
+		S4=self.addSwitch('s4')
 		H1=self.addHost('h1')
 		H2=self.addHost('h2')
-		H3=self.addHost('h3')
-		H4=self.addHost('h4')
 
 		self.addLink(S1,S2)
-		self.addLink(S1,H1)
-		self.addLink(S1,H2)
-		self.addLink(S2,H3)
-		self.addLink(S2,H4)
+		self.addLink(S2,S3)
+		self.addLink(S2,S4)
+		self.addLink(S3,H1)
+		self.addLink(S4,H2)
 topos={
-	'topo':(lambda: Testtopo())
+	'firsttopo':(lambda: Testtopo())
 }
 
